@@ -16,3 +16,12 @@ app.get('/user', function(req,res){
 		  users: mockUserData
 		})
 })
+
+apt.get ('/user/:id',function(req,res){
+		console .log(req.paprams.id)
+		res.json({
+		          success: true,
+			  message: 'got one user',
+			  user : req.params.id
+			})
+})
