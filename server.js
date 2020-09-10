@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 
@@ -9,13 +10,7 @@ const mockUserData=[
 {name:'Mounir'},
 {name:'Jojo'},
 ]
-app.get('/user', function(req,res){
-	res.json({
-		  success: true,
-	          message: 'successfully got users. Nice!',
-		  users: mockUserData
-		})
-})
+
 
 apt.get ('/user/:id',function(req,res){
 		console .log(req.paprams.id)
