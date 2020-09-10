@@ -12,8 +12,8 @@ const mockUserData=[
 ]
 
 
-apt.get ('/user/:id',function(req,res){
-		console .log(req.paprams.id)
+app.get ('/user/:id',function(req,res){
+		console.log(req.paprams.id)
 		res.json({
 		          success: true,
 			  message: 'got one user',
